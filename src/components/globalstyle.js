@@ -14,17 +14,8 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
 
-  html, body, #___gatsby, #gatsby-focus-wrapper {
-    height: 100%;
-  }
-
   body {
     line-height: 1.2;
-  }
-
-  #gatsby-focus-wrapper {
-    display: flex;
-    flex-direction: column;
   }
 `
 export default GlobalStyle
