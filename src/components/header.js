@@ -5,25 +5,53 @@ import PropTypes from "prop-types"
 
 const StyledHeader = styled.header`
   background: rebeccapurple;
-  margin: 0 auto;
   margin-bottom: 1.45rem;
+`
+
+const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 960px;
+  margin: 0 auto;
   padding: 1.45rem 1.0875rem;
+`
+
+const H1 = styled.h1`
+  font-size: 2rem;
+`
+
+const Nav = styled.nav`
+  display: flex;
+`
+
+const NavLink = styled(Link)`
+  text-decoration: none;
+  color: white;
+  margin-left: 1em;
 `
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
-    <h1 style={{ margin: 0 }}>
-      <Link
-        to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`,
-        }}
-      >
-        {siteTitle}
-      </Link>
-    </h1>
+    <Container>
+      <H1 style={{ margin: 0 }}>
+        <Link
+          to="/"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          {siteTitle}
+        </Link>
+      </H1>
+      <Nav>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/portfolio">Portfolio</NavLink>
+        <NavLink to="/resume">Resume</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+      </Nav>
+    </Container>
   </StyledHeader>
 )
 

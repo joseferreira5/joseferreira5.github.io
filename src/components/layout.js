@@ -19,6 +19,7 @@ const Main = styled.main`
   margin: 0 auto;
   max-width: 960px;
   padding: 0 1.0875rem 1.45rem;
+  flex: 1 0 auto;
 `
 
 const Layout = ({ children }) => {

@@ -2,9 +2,10 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledFooter = styled.footer`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
+  flex-shrink: 0;
+  padding: 1.45rem 1.0875rem;
 `
 
 export default function Footer() {
