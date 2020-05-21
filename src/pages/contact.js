@@ -9,12 +9,23 @@ const Container = styled.div`
   flex-direction: column;
 `
 
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+`
+
+const Title = styled.h2`
+  font-size: 1.8rem;
+  font-weight: bold;
+`
+
 export default function Contact() {
   return (
     <Layout>
       <SEO title="Contact" />
       <Container>
-        <form method="post" action="#">
+        <Title>Contact Me</Title>
+        <Form method="post" action="#">
           <label>
             Name
             <input type="text" name="name" id="name" />
@@ -33,7 +44,7 @@ export default function Contact() {
           </label>
           <button type="submit">Send</button>
           <input type="reset" value="Clear" />
-        </form>
+        </Form>
       </Container>
     </Layout>
   )
