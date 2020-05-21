@@ -17,7 +17,7 @@ const Container = styled.div`
   padding: 1.45rem 1.0875rem;
 `
 
-const H1 = styled.h1`
+const Logo = styled.h1`
   font-size: 2rem;
 `
 
@@ -34,7 +34,7 @@ const NavLink = styled(Link)`
 const Header = ({ siteTitle }) => (
   <StyledHeader>
     <Container>
-      <H1 style={{ margin: 0 }}>
+      <Logo style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -44,7 +44,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </H1>
+      </Logo>
       <Nav>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/portfolio">Portfolio</NavLink>
