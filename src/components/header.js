@@ -12,9 +12,14 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 960px;
   margin: 0 auto;
   padding: 1.45rem 1.0875rem;
+
+  @media (max-width: 480px) {
+    justify-content: center;
+  }
 `
 
 const Logo = styled.h1`

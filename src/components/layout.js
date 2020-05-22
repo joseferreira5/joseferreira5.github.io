@@ -16,7 +16,9 @@ const Container = styled.div`
 
 const Main = styled.main`
   margin: 0 auto;
-  min-width: 960px;
+  max-width: 960px;
+  width: 100%;
+  height: 100%;
   padding: 0 1.0875rem 1.45rem;
   flex-grow: 1;
 `

@@ -10,16 +10,26 @@ const Container = styled.section`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 500px;
+  flex-wrap: wrap;
+  min-height: 500px;
+  width: 100%;
 `
 
 const Heading = styled.h2`
   font-size: 1.8rem;
   font-weight: bold;
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 `
 
 const Text = styled.p`
   font-size: 1.5rem;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `
 
 const TextLink = styled(Link)`
@@ -32,7 +42,7 @@ const IndexPage = () => (
     <Container>
       <Heading>Hi, my name is Jose</Heading>
       <br />
-      <Text>I'm a software engineer based in NYC.</Text>
+      <Text>I'm a software engineer and web developer based in NYC.</Text>
       <br />
       <Text>
         Learn more about me <TextLink to="/about">here.</TextLink>

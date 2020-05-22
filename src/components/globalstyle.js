@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    font-family: 'Roboto';
     line-height: 1.2;
   }
 
