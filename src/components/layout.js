@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 import GlobalStyle from "./globalstyle"
@@ -11,6 +11,7 @@ import Footer from "./footer"
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  background: #113284;
   min-height: 100vh;
 `
 
@@ -21,23 +22,17 @@ const Main = styled.main`
   height: 100%;
   padding: 0 1.0875rem 1.45rem;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 `
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <Container>
       <GlobalStyle />
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <Main>{children}</Main>
       <Footer />
     </Container>
@@ -49,3 +44,13 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+// const data = useStaticQuery(graphql`
+//     query SiteTitleQuery {
+//       site {
+//         siteMetadata {
+//           title
+//         }
+//       }
+//     }
+//   `)

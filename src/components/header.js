@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 const StyledHeader = styled.header`
-  background: rebeccapurple;
+  background: #f8f7f6;
   margin-bottom: 1.45rem;
 `
 
@@ -24,6 +24,8 @@ const Container = styled.div`
 
 const Logo = styled.h1`
   font-size: 2rem;
+  border: 1px solid black;
+  padding: 0.2em;
 `
 
 const Nav = styled.nav`
@@ -32,22 +34,22 @@ const Nav = styled.nav`
 
 const NavLink = styled(Link)`
   text-decoration: none;
-  color: white;
+  color: #000000;
   margin-left: 1em;
 `
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <StyledHeader>
     <Container>
       <Logo style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `black`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          JF
         </Link>
       </Logo>
       <Nav>
