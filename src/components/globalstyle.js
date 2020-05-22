@@ -17,5 +17,10 @@ const GlobalStyle = createGlobalStyle`
   body {
     line-height: 1.2;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `
 export default GlobalStyle
