@@ -10,7 +10,7 @@ const StyledFooter = styled.footer`
 export default function Footer() {
   return (
     <StyledFooter>
-      <span>Jose Ferreira</span> © {new Date().getFullYear()}, Built with
+      © Jose Ferreira {new Date().getFullYear()}, Built with
       {` `}
       <a href="https://www.gatsbyjs.org">Gatsby</a>
     </StyledFooter>
