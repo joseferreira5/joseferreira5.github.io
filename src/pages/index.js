@@ -3,23 +3,48 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from "styled-components"
+
+const Container = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 500px;
+`
+
+const Heading = styled.h2`
+  font-size: 1.8rem;
+  font-weight: bold;
+`
+
+const Text = styled.p`
+  font-size: 1.5rem;
+`
+
+const TextLink = styled(Link)`
+  color: #98bbe3;
+`
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h2>Hi, I'm Jose Ferreira</h2>
-    <p>I'm a software engineer .</p>
-    <p>Now go build something great.</p>
-    <p>
-      Learn more about me <Link to="/about">here.</Link>
-    </p>
-    <p>
-      Check out some of the <Link to="/portfolio">work</Link> I've done.
-    </p>
-    <p>
-      Take a look at my skills and work history on my{" "}
-      <Link to="/resume">resume.</Link>
-    </p>
+    <Container>
+      <Heading>Hi, my name is Jose</Heading>
+      <br />
+      <Text>I'm a software engineer based in NYC.</Text>
+      <br />
+      <Text>
+        Learn more about me <TextLink to="/about">here.</TextLink>
+      </Text>
+      <Text>
+        Check out some of the <TextLink to="/portfolio">work</TextLink> I've
+        done.
+      </Text>
+      <Text>
+        Take a look at my <TextLink to="/resume">resume.</TextLink>
+      </Text>
+    </Container>
   </Layout>
 )
 
