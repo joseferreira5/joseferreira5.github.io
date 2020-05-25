@@ -55,7 +55,6 @@ const Header = () => (
       <Nav>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/portfolio">Portfolio</NavLink>
-        <NavLink to="/resume">Resume</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </Nav>
     </Container>
