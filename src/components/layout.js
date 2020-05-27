@@ -11,7 +11,7 @@ import Footer from "./footer"
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background: #113284;
+  background: #000000;
   min-height: 100vh;
 `
 

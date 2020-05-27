@@ -28,7 +28,7 @@ const Content = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   min-height: 400px;
-  width: 50%;
+  width: 60%;
 `
 
 export default function About() {
@@ -43,12 +43,15 @@ export default function About() {
           <Heading>About Me</Heading>
           <br />
           <Text>
-            I have over 8 years of experience in the supply chain and logistics
-            space.
-          </Text>
-          <Text>
-            On my free time, I enjoy everything baseball related, and playing
-            video games.
+            I am a solutions-oriented Web Developer and US Army Veteran who
+            holds over 8 years experience in the supply chain management space.
+            Whether it be solving multi-faceted logistical issues for infantry
+            at war or de-bugging complex errors in code, I take a
+            methodological, detail-oriented approach in developing real-time and
+            effective solutions in high pressure situations. As both an
+            independent self-starter and collaborative team player, I seek the
+            opportunity to work at an organization that places learning,
+            development and teamwork at the center of what they do.
           </Text>
         </Content>
       </Container>
