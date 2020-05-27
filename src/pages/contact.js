@@ -27,7 +27,7 @@ const Form = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 15em;
+  height: 18em;
 `
 
 const Title = styled.h2`
@@ -37,6 +37,8 @@ const Title = styled.h2`
 
 const Buttons = styled.div`
   display: flex;
+  justify-content: space-around;
+  width: 100%;
 `
 
 export default function Contact() {
@@ -59,7 +61,7 @@ export default function Contact() {
             Subject <input type="text" name="subject" id="subject" />
           </label>
           <label>Message</label>
-          <textarea name="message" id="message" rows="5" />
+          <textarea name="message" id="message" rows="8" cols="28" />
           <Buttons>
             <button type="submit">Send</button>
             <input type="reset" value="Clear" />
