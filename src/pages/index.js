@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Heading from "../components/shared/heading"
 import Text from "../components/shared/text"
+import resume from "../resume.pdf"
 
 const Container = styled.section`
   display: flex;
@@ -45,7 +46,10 @@ const IndexPage = () => (
         done.
       </Text>
       <Text>
-        Or take a look at my <TextLink to="/resume">resume.</TextLink>
+        Or take a look at my{" "}
+        <a href={resume} target="_blank" style={{ color: "#98bbe3" }}>
+          resume.
+        </a>
       </Text>
     </Container>
   </Layout>
