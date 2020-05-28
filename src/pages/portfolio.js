@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Heading from "../components/shared/heading"
 import Text from "../components/shared/text"
 import projects from "../projects"
+import githubLogo from "../images/GitHub-Mark-32px.png"
 
 const Container = styled.section`
   display: flex;
@@ -37,10 +38,6 @@ const Image = styled.img`
   margin: 1em 0;
 `
 
-const Links = styled.div`
-  display: flex;
-`
-
 export default function Portfolio() {
   return (
     <Layout>
@@ -49,8 +46,13 @@ export default function Portfolio() {
         {projects.map((project, i) => (
           <Project key={i}>
             <Heading>{project.name}</Heading>
-            <Image src={project.image} alt={project.name} />
+            <a href={project.deployedURL} target="_blank" rel="noreferrer">
+              <Image src={project.image} alt={project.name} />
+            </a>
             <Text>{project.description}</Text>
+            <a href={project.githubURL} target="_blank" rel="noreferrer">
+              <img src={githubLogo} alt="github logo" />
+            </a>
           </Project>
         ))}
       </Container>

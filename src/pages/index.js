@@ -47,7 +47,12 @@ const IndexPage = () => (
       </Text>
       <Text>
         Or take a look at my{" "}
-        <a href={resume} target="_blank" style={{ color: "#98bbe3" }}>
+        <a
+          href={resume}
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "#98bbe3" }}
+        >
           resume.
         </a>
       </Text>

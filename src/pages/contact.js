@@ -25,9 +25,9 @@ const Container = styled.div`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
-  height: 18em;
+  height: 22em;
 `
 
 const Title = styled.h2`
@@ -38,7 +38,10 @@ const Title = styled.h2`
 const Buttons = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 100%;
+
+  button {
+    margin-right: 1em;
+  }
 `
 
 export default function Contact() {
@@ -51,16 +54,13 @@ export default function Contact() {
           method="POST"
           action="https://getform.io/f/06139ea0-fac1-44f1-8579-f022d4a83d2f"
         >
-          <label>
-            Name <input type="text" name="name" id="name" />
-          </label>
-          <label>
-            Email <input type="email" name="email" id="email" />
-          </label>
-          <label>
-            Subject <input type="text" name="subject" id="subject" />
-          </label>
-          <label>Message</label>
+          <label htmlFor="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <label htmlFor="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label htmlFor="subject">Subject</label>
+          <input type="text" name="subject" id="subject" />
+          <label htmlFor="message">Message</label>
           <textarea name="message" id="message" rows="8" cols="28" />
           <Buttons>
             <button type="submit">Send</button>

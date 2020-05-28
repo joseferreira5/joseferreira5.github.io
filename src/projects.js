@@ -8,7 +8,7 @@ const projects = [
   {
     name: "DSbot",
     description:
-      "Built with HTML, CSS, and vanilla JavaScript, DSbot is your personal drill sergeant! ",
+      "Built with HTML, CSS, and vanilla JavaScript, DSbot is your personal drill sergeant! Using the wger Workout Manager API, you can generate a random exercise to target a specific muscle group and save your favorites to localstorage.",
     image: dsbotHome,
     githubURL: "https://github.com/joseferreira5/DSbot",
     deployedURL: "http://dsbot.surge.sh/",
