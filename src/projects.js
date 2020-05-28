@@ -16,7 +16,7 @@ const projects = [
   {
     name: "MLB H2H",
     description:
-      "MLB Head to Head Player Comparison app built with React (Hooks).",
+      "MLB Head to Head is a player comparison application built with React and made possible with the MLB Data API. Search for two players and you can easily compare hitting or pitching stats in a side by side format.",
     image: mlbh2hSearch,
     githubURL: "https://github.com/joseferreira5/mlb-h2h",
     deployedURL: "https://mlb-h2h.netlify.app/",

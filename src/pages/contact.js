@@ -49,7 +49,7 @@ export default function Contact() {
     <Layout>
       <SEO title="Contact" />
       <Container>
-        <Title>Contact Me</Title>
+        <Title>Get In Contact</Title>
         <Form
           method="POST"
           action="https://getform.io/f/06139ea0-fac1-44f1-8579-f022d4a83d2f"
