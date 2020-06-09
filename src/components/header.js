@@ -41,17 +41,16 @@ const NavLink = styled(Link)`
 const Header = () => (
   <StyledHeader>
     <Container>
-      <Logo style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `black`,
-            textDecoration: `none`,
-          }}
-        >
-          JF
-        </Link>
-      </Logo>
+      <Link
+        to="/"
+        style={{
+          color: `black`,
+          textDecoration: `none`,
+        }}
+      >
+        <Logo style={{ margin: 0 }}>JF</Logo>
+      </Link>
+
       <Nav>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/portfolio">Portfolio</NavLink>
