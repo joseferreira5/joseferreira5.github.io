@@ -20,6 +20,7 @@ const Container = styled.section`
   padding: 2em;
   border-radius: 1em;
   line-height: 1.6;
+  opacity: 0.8;
 
   @media (max-width: 480px) {
     padding: 1em;
