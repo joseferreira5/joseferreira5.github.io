@@ -7,11 +7,12 @@ import GlobalStyle from "./globalstyle"
 
 import Header from "./header"
 import Footer from "./footer"
+import backgroundImage from "../images/nyc_landscape.jpg"
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background: #000000;
+  background-image: url(${backgroundImage});
   min-height: 100vh;
 `
 
