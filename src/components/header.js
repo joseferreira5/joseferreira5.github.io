@@ -1,14 +1,14 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import resume from "../lib/resume.pdf"
 
 const StyledHeader = styled.header`
   background: #f8f7f6;
   margin-bottom: 1.45rem;
 `
 
-const Container = styled.div`
+const Navbar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,6 +16,16 @@ const Container = styled.div`
   max-width: 960px;
   margin: 0 auto;
   padding: 1.45rem 1.0875rem;
+
+  a {
+    margin-left: 1.5em;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    transform: scale(1.1);
+  }
 
   @media (max-width: 480px) {
     justify-content: center;
@@ -32,31 +42,27 @@ const Nav = styled.nav`
   display: flex;
 `
 
-const NavLink = styled(Link)`
+const NavLink = styled.a`
   text-decoration: none;
   color: #000000;
-  margin-left: 1em;
 `
 
 const Header = () => (
   <StyledHeader>
-    <Container>
-      <Link
-        to="/"
-        style={{
-          color: `black`,
-          textDecoration: `none`,
-        }}
-      >
-        <Logo style={{ margin: 0 }}>JF</Logo>
-      </Link>
+    <Navbar>
+      <NavLink>
+        <Logo style={{ margin: 0 }}>Jose Ferreira</Logo>
+      </NavLink>
 
       <Nav>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/portfolio">Portfolio</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink href="#about">About</NavLink>
+        <NavLink href="#portfolio">Work</NavLink>
+        <NavLink href={resume} target="_blank" rel="noreferrer">
+          Resume
+        </NavLink>
+        <NavLink href="#portfolio">Contact</NavLink>
       </Nav>
-    </Container>
+    </Navbar>
   </StyledHeader>
 )
 

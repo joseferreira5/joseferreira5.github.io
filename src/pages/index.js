@@ -1,12 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Heading from "../components/shared/heading"
 import Text from "../components/shared/text"
-import resume from "../resume.pdf"
 
 const Container = styled.section`
   display: flex;
@@ -27,10 +25,6 @@ const Container = styled.section`
   }
 `
 
-const TextLink = styled(Link)`
-  color: #98bbe3;
-`
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -38,25 +32,6 @@ const IndexPage = () => (
       <Heading>Hi, my name is Jose.</Heading>
       <br />
       <Text>I'm a software engineer and web developer based in NYC.</Text>
-      <br />
-      <Text>
-        Learn more about me <TextLink to="/about">here.</TextLink>
-      </Text>
-      <Text>
-        Check out some of the <TextLink to="/portfolio">work</TextLink> I've
-        done.
-      </Text>
-      <Text>
-        Or take a look at my{" "}
-        <a
-          href={resume}
-          target="_blank"
-          rel="noreferrer"
-          style={{ color: "#98bbe3" }}
-        >
-          resume.
-        </a>
-      </Text>
     </Container>
   </Layout>
 )

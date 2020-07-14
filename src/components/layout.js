@@ -13,6 +13,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-image: url(${backgroundImage});
+  background-position: center;
+  background-size: cover;
+  overflow-y: auto;
   min-height: 100vh;
 `
 
